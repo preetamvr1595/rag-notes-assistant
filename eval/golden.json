@@ -1,0 +1,868 @@
+{
+ "in_scope": [
+  {
+   "id": "in00",
+   "question": "Why is a NumPy array faster than a Python list?",
+   "targets": [
+    [
+     "numpy/01_numpy_basics",
+     "Why NumPy instead"
+    ],
+    [
+     "numpy/01_numpy_basics",
+     "Memory Efficiency"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in01",
+   "question": "If I change a slice of an array, does the original array change too?",
+   "targets": [
+    [
+     "numpy/03_indexing_slicing",
+     "Views vs Copies"
+    ],
+    [
+     "numpy/03_indexing_slicing",
+     "View-vs-Copy"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in02",
+   "question": "How can I turn a 1-D array of 12 numbers into a 3x4 table?",
+   "targets": [
+    [
+     "numpy/04_reshaping_stacking",
+     "reshape()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in03",
+   "question": "What is the difference between ravel and flatten?",
+   "targets": [
+    [
+     "numpy/04_reshaping_stacking",
+     "vs `flatten()`"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in04",
+   "question": "How do I find the position of the largest element in an array?",
+   "targets": [
+    [
+     "numpy/05_searching_sorting_filtering",
+     "argmax()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in05",
+   "question": "How do I get the order of indices that would sort an array, not the sorted values?",
+   "targets": [
+    [
+     "numpy/05_searching_sorting_filtering",
+     "argsort()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in06",
+   "question": "How can I remove duplicate values from an array?",
+   "targets": [
+    [
+     "numpy/05_searching_sorting_filtering",
+     "np.unique()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in07",
+   "question": "How do I test whether each element belongs to a given list of values?",
+   "targets": [
+    [
+     "numpy/05_searching_sorting_filtering",
+     "isin()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in08",
+   "question": "How do I add a border of zeros around a matrix?",
+   "targets": [
+    [
+     "numpy/04_reshaping_stacking",
+     "np.pad()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in09",
+   "question": "How do I shift array elements around circularly?",
+   "targets": [
+    [
+     "numpy/04_reshaping_stacking",
+     "np.roll()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in10",
+   "question": "What does -1 mean when reshaping an array?",
+   "targets": [
+    [
+     "numpy/04_reshaping_stacking",
+     "Using `-1`"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in11",
+   "question": "How do I create five evenly spaced numbers between 0 and 1?",
+   "targets": [
+    [
+     "numpy/02_array_creation",
+     "linspace()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in12",
+   "question": "What is the modern way to generate random numbers in NumPy?",
+   "targets": [
+    [
+     "numpy/02_array_creation",
+     "default_rng()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in13",
+   "question": "How do I select all elements greater than 10 using a condition?",
+   "targets": [
+    [
+     "numpy/03_indexing_slicing",
+     "Boolean (Mask) Indexing"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in14",
+   "question": "How does NumPy combine arrays of different shapes in arithmetic?",
+   "targets": [
+    [
+     "numpy/04_reshaping_stacking",
+     "Broadcasting Rules"
+    ],
+    [
+     "numpy/01_numpy_basics",
+     "Broadcasting"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in15",
+   "question": "How do I fit a polynomial curve to data points?",
+   "targets": [
+    [
+     "numpy/05_searching_sorting_filtering",
+     "polyfit()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in16",
+   "question": "Why does adding large numbers to an int8 array give a wrong answer?",
+   "targets": [
+    [
+     "numpy/01_numpy_basics",
+     "Integer Overflow"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in17",
+   "question": "How can I get the three largest values without fully sorting?",
+   "targets": [
+    [
+     "numpy/05_searching_sorting_filtering",
+     "partition()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in18",
+   "question": "How do I sort rows by two different columns as keys?",
+   "targets": [
+    [
+     "numpy/05_searching_sorting_filtering",
+     "lexsort()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in19",
+   "question": "How do I compute a running total of an array?",
+   "targets": [
+    [
+     "numpy/05_searching_sorting_filtering",
+     "Cumulative Functions"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in20",
+   "question": "How do I select rows by their label rather than their position?",
+   "targets": [
+    [
+     "pandas/03_indexing_selecting",
+     "loc[]"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in21",
+   "question": "How do I fill missing values with the column average?",
+   "targets": [
+    [
+     "pandas/04_data_cleaning",
+     "fillna()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in22",
+   "question": "How do I join two tables on a common column like in SQL?",
+   "targets": [
+    [
+     "pandas/05_groupby_merging",
+     "merge()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in23",
+   "question": "How do I build an Excel-style summary table from raw data?",
+   "targets": [
+    [
+     "pandas/05_groupby_merging",
+     "pivot_table()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in24",
+   "question": "How can I keep only the groups whose average exceeds a threshold?",
+   "targets": [
+    [
+     "pandas/05_groupby_merging",
+     "filter()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in25",
+   "question": "How do I convert text columns into dates?",
+   "targets": [
+    [
+     "pandas/04_data_cleaning",
+     "to_datetime()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in26",
+   "question": "How do I detect outliers using quartiles?",
+   "targets": [
+    [
+     "pandas/04_data_cleaning",
+     "IQR"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in27",
+   "question": "How do I count how many times each value appears in a column?",
+   "targets": [
+    [
+     "pandas/01_pandas_basics",
+     "value_counts()"
+    ],
+    [
+     "interview-qa/04_pandas_interview_qna",
+     "Q16"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in28",
+   "question": "Can I filter rows using an SQL-like string expression?",
+   "targets": [
+    [
+     "pandas/03_indexing_selecting",
+     "query()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in29",
+   "question": "How do I read only the first 100 rows of a huge CSV file?",
+   "targets": [
+    [
+     "pandas/02_dataframe_creation",
+     "nrows"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in30",
+   "question": "How do I add each group's mean back onto every row of the original table?",
+   "targets": [
+    [
+     "pandas/05_groupby_merging",
+     "transform()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in31",
+   "question": "How do I get rid of repeated rows?",
+   "targets": [
+    [
+     "pandas/04_data_cleaning",
+     "Removing Duplicate Rows"
+    ],
+    [
+     "interview-qa/04_pandas_interview_qna",
+     "Q24"
+    ],
+    [
+     "pandas/01_pandas_basics",
+     "Duplicate Rows"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in32",
+   "question": "How do I get the n rows with the highest value in a column?",
+   "targets": [
+    [
+     "pandas/03_indexing_selecting",
+     "nlargest()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in33",
+   "question": "How do I change a column's data type?",
+   "targets": [
+    [
+     "pandas/04_data_cleaning",
+     "astype()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in34",
+   "question": "How do I draw two y-axes with different scales on one chart?",
+   "targets": [
+    [
+     "matplotlib/01_matplotlib_basics",
+     "Twin Axes"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in35",
+   "question": "How do I build a multi-panel layout where plots have different sizes?",
+   "targets": [
+    [
+     "matplotlib/03_subplots_styling",
+     "GridSpec"
+    ],
+    [
+     "matplotlib/01_matplotlib_basics",
+     "subplot_mosaic()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in36",
+   "question": "How do I draw a 3D surface?",
+   "targets": [
+    [
+     "matplotlib/04_advanced",
+     "3D Surface"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in37",
+   "question": "How do I shade the area between two curves?",
+   "targets": [
+    [
+     "matplotlib/01_matplotlib_basics",
+     "Fill Between"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in38",
+   "question": "How do I save a figure as an image file?",
+   "targets": [
+    [
+     "matplotlib/01_matplotlib_basics",
+     "Saving Figures"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in39",
+   "question": "How do I draw a circular chart showing proportions?",
+   "targets": [
+    [
+     "matplotlib/02_plot_types",
+     "Pie Charts"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in40",
+   "question": "How can I create my own colour map?",
+   "targets": [
+    [
+     "matplotlib/03_subplots_styling",
+     "Custom Colormap"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in41",
+   "question": "How do I show uncertainty as whiskers on data points?",
+   "targets": [
+    [
+     "matplotlib/04_advanced",
+     "Error Bars"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in42",
+   "question": "How do I plot every individual point without them overlapping?",
+   "targets": [
+    [
+     "seaborn/02_categorical_plots",
+     "swarmplot()"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in43",
+   "question": "How do I see all pairwise relationships between numeric columns at once?",
+   "targets": [
+    [
+     "seaborn/03_distribution_plots",
+     "pairplot()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in44",
+   "question": "How do I hide the redundant half of a correlation heatmap?",
+   "targets": [
+    [
+     "seaborn/04_regression_matrix",
+     "Masking Upper Triangle"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in45",
+   "question": "How do I show a scatter plot with the distributions of each axis on the sides?",
+   "targets": [
+    [
+     "seaborn/03_distribution_plots",
+     "jointplot()"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in46",
+   "question": "How do I make plot text and lines bigger for a presentation?",
+   "targets": [
+    [
+     "seaborn/01_seaborn_basics",
+     "Context Control"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in47",
+   "question": "Why should I wrap preprocessing and the model in a pipeline?",
+   "targets": [
+    [
+     "scikit-learn/01_sklearn_basics",
+     "Why Pipelines Matter"
+    ],
+    [
+     "scikit-learn/01_sklearn_basics",
+     "Building a Pipeline"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in48",
+   "question": "How do I choose the number of clusters for k-means?",
+   "targets": [
+    [
+     "scikit-learn/04_unsupervised_preprocessing",
+     "Elbow Method"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in49",
+   "question": "How do I decide how many principal components to keep?",
+   "targets": [
+    [
+     "scikit-learn/04_unsupervised_preprocessing",
+     "Number of Components"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in50",
+   "question": "How do I try every combination of hyperparameters?",
+   "targets": [
+    [
+     "scikit-learn/05_model_selection_project",
+     "GridSearchCV"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in51",
+   "question": "How can I tell if my model is overfitting or underfitting?",
+   "targets": [
+    [
+     "scikit-learn/05_model_selection_project",
+     "Learning Curve"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in52",
+   "question": "Which regression shrinks some coefficients exactly to zero?",
+   "targets": [
+    [
+     "scikit-learn/03_regression",
+     "Lasso"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in53",
+   "question": "How do I handle missing values with scikit-learn?",
+   "targets": [
+    [
+     "scikit-learn/04_unsupervised_preprocessing",
+     "SimpleImputer"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in54",
+   "question": "How do I rescale features to lie between 0 and 1?",
+   "targets": [
+    [
+     "scikit-learn/01_sklearn_basics",
+     "MinMaxScaler"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in55",
+   "question": "How do I apply different preprocessing to numeric and categorical columns?",
+   "targets": [
+    [
+     "scikit-learn/05_model_selection_project",
+     "ColumnTransformer"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in56",
+   "question": "How do I measure precision and recall for a classifier?",
+   "targets": [
+    [
+     "scikit-learn/02_classification",
+     "Precision, Recall"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in57",
+   "question": "How do I find out how much memory an array uses?",
+   "targets": [
+    [
+     "exercises/100_numpy_exercises",
+     "memory size"
+    ],
+    [
+     "numpy/01_numpy_basics",
+     "Memory Efficiency"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in58",
+   "question": "Create a vector with values ranging from 10 to 49",
+   "targets": [
+    [
+     "exercises/100_numpy_exercises",
+     "7. Create a vector"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in59",
+   "question": "How do I reverse a vector so the first element becomes last?",
+   "targets": [
+    [
+     "exercises/100_numpy_exercises",
+     "Reverse a vector"
+    ]
+   ],
+   "split": "test"
+  },
+  {
+   "id": "in60",
+   "question": "How do I select the rows where age is missing?",
+   "targets": [
+    [
+     "interview-qa/04_pandas_interview_qna",
+     "Q9"
+    ]
+   ],
+   "split": "dev"
+  },
+  {
+   "id": "in61",
+   "question": "How do I replace yes/no strings with True/False?",
+   "targets": [
+    [
+     "interview-qa/04_pandas_interview_qna",
+     "Q18"
+    ]
+   ],
+   "split": "test"
+  }
+ ],
+ "out_of_scope": [
+  {
+   "id": "out00",
+   "question": "What is the capital of France?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out01",
+   "question": "How do I deploy pods on Kubernetes?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out02",
+   "question": "How does the attention mechanism in a transformer work?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out03",
+   "question": "What is the weather like in Mumbai today?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out04",
+   "question": "How do I cook pasta carbonara?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out05",
+   "question": "Who won the last cricket world cup?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out06",
+   "question": "How does the TCP three-way handshake work?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out07",
+   "question": "What is dependency injection in Spring Boot?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out08",
+   "question": "Explain how blockchain consensus works.",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out09",
+   "question": "How do I use React hooks to manage state?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out10",
+   "question": "How do I say hello in Spanish?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out11",
+   "question": "How do I train a GAN to generate faces?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out12",
+   "question": "What is the GDP of India?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out13",
+   "question": "How do Docker volumes persist data?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out14",
+   "question": "How does Java garbage collection work?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out15",
+   "question": "What is the latest iPhone price?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out16",
+   "question": "How do I write a for loop in bash?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out17",
+   "question": "Summarise the history of the Roman Empire.",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out18",
+   "question": "How do I train a convolutional neural network in PyTorch?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out19",
+   "question": "How does XGBoost regularise its trees?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out20",
+   "question": "How do I use SQL window functions like ROW_NUMBER?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out21",
+   "question": "How do I make an interactive chart with Plotly?",
+   "targets": [],
+   "split": "test"
+  },
+  {
+   "id": "out22",
+   "question": "How do I scrape a website with BeautifulSoup?",
+   "targets": [],
+   "split": "dev"
+  },
+  {
+   "id": "out23",
+   "question": "How do I run a t-test with scipy?",
+   "targets": [],
+   "split": "test"
+  }
+ ]
+}
