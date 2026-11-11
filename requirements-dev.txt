@@ -1,0 +1,8 @@
+-r requirements.txt
+pytest
+pandas
+matplotlib
+seaborn
+jupyter
+# optional neural embeddings (needs internet once):
+# sentence-transformers
