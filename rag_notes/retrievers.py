@@ -1,3 +1,4 @@
+"""Sparse BM25, Character n-gram, and RRF rank fusion retrievers."""
 """Three retrievers behind one interface + Reciprocal-Rank-Fusion hybrid."""
 from __future__ import annotations
 import numpy as np
