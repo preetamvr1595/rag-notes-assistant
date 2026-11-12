@@ -1,3 +1,4 @@
+"""Heading-aware and code-block-aware hierarchical markdown chunker."""
 """Heading-aware Markdown chunker. Code fences are never split mid-line by accident or mistaken for headings."""
 from __future__ import annotations
 import re
