@@ -1,3 +1,4 @@
+"""Evaluation metrics: hit@k, MRR, bootstrap confidence intervals."""
 """Retrieval evaluation: hit@k, MRR, and out-of-scope refusal."""
 from __future__ import annotations
 import json, re
