@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-notes-assistant"
+version = "0.2.0"
+description = "Offline-first RAG assistant for study notes with citation grounding and refusal gate"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Preetham V R", email = "preetamvr962002@gmail.com"}]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I"]
