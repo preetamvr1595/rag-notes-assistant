@@ -1,3 +1,4 @@
+"""Tokenizer and normalizer utilities with strict typing."""
 """Tokenizer that understands code: `np.where`, `groupby`, `read_csv`, `DataFrame` -> useful sub-tokens."""
 import re
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
