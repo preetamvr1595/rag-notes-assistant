@@ -1,3 +1,4 @@
+"""Document loaders for markdown, notebooks, and PDFs."""
 """Load documents (.md, .txt, .ipynb, .pdf) from a folder into plain-Markdown documents."""
 from __future__ import annotations
 from dataclasses import dataclass
