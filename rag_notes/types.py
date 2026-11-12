@@ -23,3 +23,29 @@ class Passage:
     is_code: bool = False
     start_char: int = 0
     end_char: int = 0
+
+@dataclass
+class SearchResult:
+    """Represents a retrieved passage with relevance score."""
+    passage: Passage
+    score: float
+    rank: int
+    retriever_name: str
+
+@dataclass
+class Citation:
+    """Citation reference linked to an answer."""
+    citation_id: int
+    source_file: str
+    section: str
+    snippet: str
+
+@dataclass
+class AnswerResult:
+    """Complete synthesized answer response."""
+    query: str
+    answer: str
+    refused: bool
+    confidence_score: float
+    citations: List[Citation] = field(default_factory=list)
+    top_passages: List[SearchResult] = field(default_factory=list)
