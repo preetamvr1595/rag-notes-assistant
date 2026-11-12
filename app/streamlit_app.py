@@ -1,3 +1,4 @@
+"""Streamlit Interactive Chat & Retrieval Assistant."""
 """Streamlit chat UI.   streamlit run app/streamlit_app.py"""
 import sys
 from pathlib import Path
