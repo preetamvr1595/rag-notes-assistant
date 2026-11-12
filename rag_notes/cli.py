@@ -1,3 +1,4 @@
+"""Command line interface for indexing and query testing."""
 """Command line:  python -m rag_notes.cli build   |   python -m rag_notes.cli ask "How do I merge two DataFrames?" """
 import argparse, sys
 from .answer import RAG, backend_from_env
