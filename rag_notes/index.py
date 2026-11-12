@@ -1,3 +1,4 @@
+"""Inverted index builder, serialization, and passage persistence."""
 """Build, save and query the search index."""
 from __future__ import annotations
 from dataclasses import asdict
