@@ -1,3 +1,9 @@
+"""Evaluation metrics: hit@k, MRR, precision, recall, F1."""
+def f1_score(precision: float, recall: float) -> float:
+    """Calculate harmonic mean of precision and recall."""
+    if precision + recall == 0:
+        return 0.0
+    return 2 * (precision * recall) / (precision + recall)
 """Evaluation metrics: hit@k, MRR, bootstrap confidence intervals."""
 """Retrieval evaluation: hit@k, MRR, and out-of-scope refusal."""
 from __future__ import annotations
