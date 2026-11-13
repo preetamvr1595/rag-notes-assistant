@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  rag-ui:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - RAG_BACKEND=offline
+      - RAG_DATA_DIR=data/notes
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+
+  rag-api:
+    build: .
+    command: uvicorn app.api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - RAG_BACKEND=offline
+    restart: unless-stopped
