@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ext-01",
+    "query": "How do I calculate gradients automatically in PyTorch?",
+    "in_scope": true,
+    "series": "pytorch",
+    "golden_file": "01_tensors_and_autograd.md"
+  },
+  {
+    "id": "ext-02",
+    "query": "What is the difference between RANK and DENSE_RANK in SQL?",
+    "in_scope": true,
+    "series": "sql",
+    "golden_file": "08_sql_interview_qna.md"
+  }
+]
