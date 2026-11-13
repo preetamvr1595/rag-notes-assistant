@@ -1,4 +1,6 @@
 """Answer synthesis, citation extraction, and out-of-scope refusal gate."""
+# Configurable synthesis temperature for LLM backend
+"""Answer synthesis, citation extraction, and out-of-scope refusal gate."""
 """Answer generation with citations, a grounding prompt, a refusal gate, and pluggable LLM backends."""
 from __future__ import annotations
 import json, os, re, urllib.request
