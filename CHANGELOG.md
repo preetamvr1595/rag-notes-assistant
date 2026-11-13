@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2026-11-13
+### Added
+- FastAPI REST API endpoints (`/ask`, `/search`, `/health`, `/metrics`).
+- Docker containerization with multi-service `docker-compose.yml`.
+- PyTorch deep learning and Git/Docker study notes corpus.
+- CI workflows for Ruff linting and Docker build verification.
+- Automated benchmark runner and refusal gate confusion matrix scripts.
+- Extended evaluation dataset `eval/golden_extended.json`.
+
 ## [0.2.0] - 2026-11-12
 ### Added
 - Domain models in `rag_notes/types.py` (`Passage`, `SearchResult`, `Citation`, `AnswerResult`).
