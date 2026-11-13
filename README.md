@@ -2,7 +2,7 @@
 
 A **Retrieval-Augmented Generation (RAG) chatbot** that answers questions **only from your own notes**, shows the **sources**, and says *"I couldn't find that in your notes"* when the topic isn't covered. Built and **measured** with a hand-written evaluation set — including the parts that don't work well yet.
 
-![Python](https://img.shields.io/badge/Python-3.12-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-app-FF4B4B) ![RAG](https://img.shields.io/badge/RAG-BM25%20%2B%20char%20n--grams-purple) ![Ollama](https://img.shields.io/badge/LLM-Ollama%20%2F%20OpenAI--compatible-black) ![tests](https://img.shields.io/badge/tests-25%20passing-brightgreen) ![License-MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![v0.2.0](https://img.shields.io/badge/version-0.2.0-blue)
+![Python](https://img.shields.io/badge/Python-3.12-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-app-FF4B4B) ![RAG](https://img.shields.io/badge/RAG-BM25%20%2B%20char%20n--grams-purple) ![Ollama](https://img.shields.io/badge/LLM-Ollama%20%2F%20OpenAI--compatible-black) ![tests](https://img.shields.io/badge/tests-25%20passing-brightgreen) ![License-MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![v0.3.0](https://img.shields.io/badge/version-0.3.0-blue) ![Docker](https://img.shields.io/badge/Docker-ready-2496ED) ![FastAPI](https://img.shields.io/badge/FastAPI-API-009688)
 
 > Project 2 of 5 in my ML-engineer portfolio series (pipeline → **RAG** → LLM fine-tuning → monitoring/drift → multimodal).
 
