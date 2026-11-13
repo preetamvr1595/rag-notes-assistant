@@ -5,3 +5,7 @@ nbformat
 joblib
 streamlit
 pypdf
+
+fastapi>=0.100.0
+uvicorn>=0.22.0
+httpx>=0.24.0
