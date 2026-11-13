@@ -1,4 +1,7 @@
 """Sparse BM25, Character n-gram, and RRF rank fusion retrievers."""
+from functools import lru_cache
+# Optimized retrieval functions with query caching
+"""Sparse BM25, Character n-gram, and RRF rank fusion retrievers."""
 """Three retrievers behind one interface + Reciprocal-Rank-Fusion hybrid."""
 from __future__ import annotations
 import numpy as np
